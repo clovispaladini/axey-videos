@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175558570-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-175558570-1');
+    </script>
+    
+    <meta charset="utf-8" />
+    <meta name="keywords" content=", Axey, Achei, vídeos, you, tube" />
+    <meta name="description" content="AXEY Vídeos | Uma Busca Personalizada YouTube" />
+    <meta name="author" content="Clovis Paladini" />
+    <meta name="robots" content="index, follow" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="height=device-height, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>AXEY Vídeos | Busca Personalizada YouTube</title>
+</head>
+<body>
+    <header id="containerHeader">
+        <h1>
+            <span class="spanH1L">Axey</span> 
+            <span class="spanH1R">Vídeos</span>
+        </h1>
+        <p class="pHeader">Busque vídeos do YouTube</p>
+    </header>
+    <main id="containerMain">
+        <section>
+            <header>
+                <p class="pInput">
+                    <input onkeyup="buscaYouTube()" type="search" id=inputSearch placeholder="Pesquisar" />
+                </p>
+            </header>
+            <div class="containerVideo">
+                <iframe id="iframeId"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer id="containerFooter">
+        <div>
+            <p>AXEY Vídeos | Buscador personalizado Youtube</p>
+            <p>Projeto criado por <a href="https://www.clovispaladini.com" alt="Clovis Paladini">Clovis Paladini | clovispaladini.com</a></p>
+            <p><a target="_blank" href="https://github.com/clovispaladini/axey-videos">https://github.com/clovispaladini/axey-videos</a></p>
+        </div>
+    </footer>
+<script src="busca.js"></script>
+</body>
+</html>

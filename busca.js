@@ -1,12 +1,13 @@
+const url = 'https://www.youtube.com/embed?listType=search&list='
+let formSearch = document.getElementById('formSearch')
 function buscaYouTube(){
-    var busca = document.getElementById('inputSearch').value;
+    let busca = document.getElementById('inputSearch').value
+    let iframe = document.getElementById('iframeId')
     if(busca === '') {
-        document.getElementById('iframeId').style.display = 'none';
-        document.getElementById('containerFooter').style.display = 'none';
+        iframe.style.display = 'none'
     }else{
-        document.getElementById('iframeId').style.display = 'inline-block';
-        document.getElementById('containerFooter').style.display = 'block';
+        iframe.style.display = 'block'
     }
-    var url = 'https://www.youtube.com/embed?listType=search&list=';
-    document.getElementById('iframeId').src = url+busca;
+    iframe.src = url+busca
 }
+formSearch.addEventListener('input', buscaYouTube)
